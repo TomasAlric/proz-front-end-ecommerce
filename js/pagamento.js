@@ -1,78 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Pagamento</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .formulario-pagamento {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin-top: 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .formulario-pagamento label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-
-    .formulario-pagamento input {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-
-    .formulario-pagamento button {
-      margin-top: 2rem;
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 1rem;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .formulario-pagamento button:hover {
-      background-color: #218838;
-    }
-
-    .sucesso {
-      background-color: #d4edda;
-      color: #155724;
-      padding: 1rem;
-      border-left: 5px solid #28a745;
-      border-radius: 8px;
-      margin-top: 2rem;
-      text-align: center;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>💳 Pagamento</h1>
-    <p>Finalize sua compra com segurança.</p>
-  </header>
-
-  <main id="pagamento-container"></main>
-
-  <footer>
-    <p>© 2025 Loja Proz</p>
-  </footer>
-
-  <script>
-    const container = document.getElementById("pagamento-container");
+const container = document.getElementById("pagamento-container");
 
     const urlParams = new URLSearchParams(window.location.search);
     const pedidoId = urlParams.get("pedidoId");
@@ -143,6 +69,3 @@
     });
 
     container.appendChild(form);
-  </script>
-</body>
-</html>

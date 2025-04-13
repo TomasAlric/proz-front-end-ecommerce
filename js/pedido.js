@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Meus Pedidos</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>🧾 Meus Pedidos</h1>
-      <p>Confira os detalhes do seu pedido finalizado.</p>
-    </header>
-
-    <main id="pedido-finalizado"></main>
-
-    <footer>
-      <p>© 2025 Loja Proz</p>
-    </footer>
-
-    <script src="produtos.js"></script>
-    <script>
-      const container = document.getElementById("pedido-finalizado");
+const container = document.getElementById("pedido-finalizado");
 
       let produtosPedido = [];
       let total = localStorage.getItem("totalPedido") || "0.00";
@@ -77,6 +56,3 @@
         };
         container.appendChild(botaoPagamento);
       }
-    </script>
-  </body>
-</html>
