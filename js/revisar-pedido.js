@@ -1,5 +1,4 @@
-// 🔧 Substitua pela URL do seu endpoint do API Gateway (ex: https://abc123.execute-api.sa-east-1.amazonaws.com/dev)
-const API_URL = "<SUA_URL_DO_API_GATEWAY_AQUI>";
+const API_URL = "<SUA_URL_DO_API_GATEWAY_AQUI>"; // 🔧 Exemplo: https://abc123.execute-api.sa-east-1.amazonaws.com/dev
 
 const urlParams = new URLSearchParams(window.location.search);
 let produtosSelecionados = [];
